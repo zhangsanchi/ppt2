@@ -1,0 +1,35 @@
+第一个要配置的是你个人的用户名称和电子邮件地址
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+接下来要设置的是默认使用的文本编辑器
+$ git config --global core.editor emacs
+
+在解决合并冲突时使用哪种差异分析工具
+$ git config --global merge.tool vimdiff
+
+
+要检查已有的配置信息，可以使用git config --list 命令：
+
+要对现有的某个项目开始用Git 管理，只需到此项目所在的目录，执行：
+$ git init
+
+$ git add *.c
+$ git add README
+$ git commit -m 'initial project version'
+
+
+克隆仓库的命令格式为git clone [url]
+$ git clone git://github.com/schacon/grit.git
+
+
+要确定哪些文件当前处于什么状态，可以用git status 命令
+
+使用命令git add 开始跟踪一个新文件。
+
+
+移除文件 可以用git rm 命令完成此项工作
+$ git rm zy1.txt
+
+
+查看提交历史 $ git log
